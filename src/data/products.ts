@@ -42,7 +42,7 @@ export const products: Product[] = [
     ],
     applications: ["Ayurvedic formulations", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
   {
@@ -67,10 +67,9 @@ export const products: Product[] = [
     ],
     applications: ["Ayurvedic formulations", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
-
   {
     slug: "aloe-vera",
     name: "Aloe Vera",
@@ -93,7 +92,7 @@ export const products: Product[] = [
     ],
     applications: ["Herbal & nutraceutical products", "Cosmetic & wellness formulations"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
   {
@@ -118,7 +117,7 @@ export const products: Product[] = [
     ],
     applications: ["Nutraceutical & herbal products", "Wellness & dietary supplements"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
   {
@@ -143,10 +142,9 @@ export const products: Product[] = [
     ],
     applications: ["Ayurvedic formulations", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
-
   {
     slug: "jeera-cumin-seeds",
     name: "Jeera (Cumin-Seeds)",
@@ -169,10 +167,9 @@ export const products: Product[] = [
     ],
     applications: ["Food & spice industry", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "090931",
   },
-
   {
     slug: "variyaali-fennel-seeds",
     name: "Variyali (Fennel-Seeds)",
@@ -195,10 +192,9 @@ export const products: Product[] = [
     ],
     applications: ["Food & spice industry", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "090961",
   },
-
   {
     slug: "isabgol-psyllium-husk",
     name: "Isabgol (Psyllium-Husk)",
@@ -221,10 +217,9 @@ export const products: Product[] = [
     ],
     applications: ["Nutraceutical & dietary supplements", "Herbal & pharmaceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "121190",
   },
-
   {
     slug: "rose-petals",
     name: "Rose",
@@ -247,10 +242,9 @@ export const products: Product[] = [
     ],
     applications: ["Herbal & nutraceutical products", "Cosmetic & wellness formulations"],
     packaging: ["10 kg export-grade bags", "25 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
-    hsCode: "121190",
+    certifications: ["COA", "FSSAI", "Lab Reports"],
+    hsCode: "060311",
   },
-
   {
     slug: "aparajita-butterfly-pea",
     name: "Aparajita Flower (Butterfly-Pea)",
@@ -278,10 +272,9 @@ export const products: Product[] = [
       "25 kg export-grade bags",
       "Custom packaging available",
     ],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
-    hsCode: "121190",
+    certifications: ["COA", "FSSAI", "Lab Reports"],
+    hsCode: "060390",
   },
-
   {
     slug: "ginger",
     name: "Ginger",
@@ -304,7 +297,32 @@ export const products: Product[] = [
     ],
     applications: ["Food & spice industry", "Herbal & nutraceutical products"],
     packaging: ["25 kg export-grade bags", "50 kg export-grade bags", "Custom packaging available"],
-    certifications: ["COA", "GMP", "ISO", "Phytosanitary Certificate"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
     hsCode: "091011",
+  },
+  {
+    slug: "onion-powder",
+    name: "Onion Powder",
+    tagline: "Dehydrated Spice · Export Quality",
+    image: "/images/onion-powder.jpg",
+    topView: "/images/onion-powder-topview.png",
+    iconImage: "/images/onion-powder-icon.png",
+    inStock: true,
+    overview:
+      "Onion Powder (Allium cepa) is a dehydrated spice widely used in food processing and seasoning blends for its rich flavor and convenience.\n\nOur onion powder is produced from carefully selected onions sourced from Maharashtra and Gujarat, India. The onions are dehydrated and finely processed to retain their natural aroma, taste, and nutritional value, ensuring export-quality standards.",
+    specifications: [
+      { label: "Botanical Name", value: "Allium cepa" },
+      { label: "Origin", value: "Maharashtra & Gujarat, India" },
+      { label: "Available Forms", value: "Dehydrated Onion Powder" },
+      { label: "Color", value: "Off-white to Light Pink" },
+      { label: "Moisture Content", value: "Max 6%" },
+      { label: "Purity", value: "99%" },
+      { label: "Foreign Matter", value: "Less than 1%" },
+      { label: "Mesh Size", value: "80–100 Mesh" },
+    ],
+    applications: ["Food processing industry", "Spice blends & seasonings", "Ready-to-eat products"],
+    packaging: ["25 kg export-grade bags", "Custom packaging available"],
+    certifications: ["COA", "FSSAI", "Lab Reports"],
+    hsCode: "071220",
   },
 ];
