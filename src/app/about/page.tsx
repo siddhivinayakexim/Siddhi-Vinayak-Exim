@@ -86,7 +86,7 @@ export default function AboutUsOutlinedJourney() {
           />
           <h1 className="text-2xl md:text-4xl font-semibold text-[#46563F] mb-4">Siddhi Vinayak Exim</h1>
           <p className="text-[#ffaa00] text-lg md:text-2xl mb-2">Growing Quality, Delivering Trust</p>
-          <div className="w-68 h-32 md:block hidden rounded-r-full border-r-10 border-b-10 border-[#214d3b] absolute right-[16%] lg:right-[25%] xl:right-[30%] 2xl:right-[36%] -bottom-12.5"></div>
+          <div className="w-68 h-32 md:block hidden rounded-r-full border-r-10 border-b-10 border-[#214d3b] absolute right-[23%] lg:right-[29%] xl:right-[33%] 2xl:right-[36%] -bottom-12.5"></div>
         </div>
 
         {/* Timeline */}
