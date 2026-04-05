@@ -43,7 +43,14 @@ export default function Footer() {
 
         <div className="md:col-span-1 col-span-2">
           <h4>CONTACT</h4>
-          <p>Surat, Gujarat - India.</p>
+          <p>
+            <b>Documentary Office:</b> D-205, Sai Avenue Residency, Kharvasa Road, near Sai Mobile Shop and Service,
+            Dindoli, Surat, Gujarat, India - 394210.
+          </p>
+          <p className="mt-3">
+            <b>Marketing Office:</b> 217, Isana Business Hub, near Pandesara Dmart, Althan-Pandesara Road, Pandesara,
+            Surat, Gujarat, India - 394221.
+          </p>
           <p className={styles.email}>siddhivinayakeximtbp55@gmail.com</p>
           <p className={styles.number}>+91 7359357650 | +91 8320708852 | +91 8733928558</p>
           <p className="mt-2 underline">
