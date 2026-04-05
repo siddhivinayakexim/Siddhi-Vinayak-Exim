@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const sections = [
   {
-    title: "From the Fields We Come",
-    text: "Founded by two sons of the soil, our journey began in the fields where we learned that quality is nurtured, not manufactured.",
-    icon: Sprout,
+    title: "Miss. Trupti B. Patel",
+    text: "Founder",
+    image: "/images/trupti.jpeg",
     side: "left",
   },
   {
@@ -16,18 +16,38 @@ const sections = [
   },
   {
     vacant: true,
+  },
+  {
+    title: "Mr. Bharat B. Patel",
+    text: "CEO",
+    image: "/images/bharat.jpeg",
+    side: "right",
+    className: "-mt-[10px]",
+  },
+  {
+    title: "Mr. Hepeen A. Patel",
+    text: "Marketing Manager",
+    image: "/images/hepeen.jpeg",
+    side: "left",
+    className: "-mt-[10px]",
+  },
+  {
+    vacant: true,
+  },
+  {
+    vacant: true,
+  },
+  {
+    title: "From the Fields We Come",
+    text: "Founded by two sons of the soil, our journey began in the fields where we learned that quality is nurtured, not manufactured.",
+    icon: Sprout,
+    side: "right",
+    className: "-mt-[10px]",
   },
   {
     title: "Understanding the Crop from the Seed",
     text: "Our seed-level knowledge ensures purity, consistency, and authenticity that only farmers can promise.",
     icon: Leaf,
-    side: "right",
-    className: "-mt-[10px]",
-  },
-  {
-    title: "Bridging Tradition with Global Demand",
-    text: "We connect traditional Indian farming wisdom with global wellness needs through ethical sourcing.",
-    icon: Globe,
     side: "left",
     className: "-mt-[10px]",
   },
@@ -38,10 +58,17 @@ const sections = [
     vacant: true,
   },
   {
+    title: "Bridging Tradition with Global Demand",
+    text: "We connect traditional Indian farming wisdom with global wellness needs through ethical sourcing.",
+    icon: Globe,
+    side: "right",
+    className: "-mt-[10px]",
+  },
+  {
     title: "Purity a Farmer Can Promise",
     text: "Every batch is carefully selected, naturally processed, and responsibly handled.",
     icon: ShieldCheck,
-    side: "right",
+    side: "left",
     className: "-mt-[10px]",
   },
 ];
@@ -86,7 +113,7 @@ export default function AboutUsOutlinedJourney() {
           />
           <h1 className="text-2xl md:text-4xl font-semibold text-[#46563F] mb-4">Siddhi Vinayak Exim</h1>
           <p className="text-[#ffaa00] text-lg md:text-2xl mb-2">Growing Quality, Delivering Trust</p>
-          <div className="w-68 h-32 md:block hidden rounded-r-full border-r-10 border-b-10 border-[#214d3b] absolute right-[23%] lg:right-[29%] xl:right-[33%] 2xl:right-[36%] -bottom-12.5"></div>
+          <div className="w-80 lg:w-108 h-32 md:block hidden rounded-r-full border-r-10 border-b-10 border-[#214d3b] absolute right-[19%] lg:right-[27%] xl:right-[31%] 2xl:right-[34%] -bottom-12.5"></div>
         </div>
 
         {/* Timeline */}
@@ -95,7 +122,7 @@ export default function AboutUsOutlinedJourney() {
             const isLeft = item.side === "left";
             const Icon = item.icon;
 
-            if (item.vacant || !Icon) {
+            if (item.vacant || (!Icon && !item.image)) {
               return <div key={i} className="h-32"></div>;
             }
 
@@ -114,11 +141,25 @@ export default function AboutUsOutlinedJourney() {
                     flexDirection: isLeft ? "row" : "row-reverse",
                   }}>
                   {/* Icon */}
-                  <div className="shrink-0">
-                    <div className="w-24 h-24 rounded-full bg-[#5F6F52] flex items-center justify-center">
-                      <Icon size={44} className="text-white" />
+                  {Icon ? (
+                    <div className="shrink-0">
+                      <div className="w-24 h-24 rounded-full bg-[#5F6F52] flex items-center justify-center">
+                        <Icon size={44} className="text-white" />
+                      </div>
                     </div>
-                  </div>
+                  ) : null}
+                  {/* Image */}
+                  {item.image ? (
+                    <div className="shrink-0">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={96}
+                        height={96}
+                        className="w-36 h-36 rounded-full object-cover border-4 border-[#5F6F52]"
+                      />
+                    </div>
+                  ) : null}
 
                   {/* Text */}
                   <div
@@ -128,14 +169,24 @@ export default function AboutUsOutlinedJourney() {
                       right: !isMobile ? 0 : isLeft ? "-12rem" : "unset",
                       textAlign: isLeft ? "left" : "right",
                     }}>
-                    <h3 className="text-lg md:text-2xl font-semibold text-[#46563F] mb-3">{item.title}</h3>
+                    <h3
+                      className="text-lg md:text-2xl font-semibold text-[#46563F] mb-3"
+                      style={
+                        item.image
+                          ? {
+                              width: "max-content",
+                            }
+                          : {}
+                      }>
+                      {item.title}
+                    </h3>
                     <p className="text-[#6F756A] leading-relaxed text-xs md:text-base">{item.text}</p>
                   </div>
                 </div>
               </div>
             );
           })}
-          <div className="-z-10 w-68 h-32 md:block hidden rounded-l-full border-l-10 border-t-10 border-[#214d3b] absolute left-80 -bottom-29.5"></div>
+          <div className="-z-10 w-52 lg:w-68 h-32 md:block hidden rounded-r-full border-r-10 border-t-10 border-[#214d3b] absolute right-80 -bottom-29.5"></div>
         </div>
       </div>
     </section>
